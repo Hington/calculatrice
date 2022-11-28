@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+h1{
+position: absolute;
+left: 50%;
+top: 30%;
+color: #ffffff;
+transform: translate(-50%);
+
+}
+.container{
+    max-width: 900px;
+    max-height: 500px;
+    height: 200px;
+    margin: 15px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 6% 85%;
+    grid-gap: 1%;
+}
+.partie1{
+    margin-top: 5px;
+    margin-bottom: 73px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 64% 31% 119% 58%;
+}
+.partie1 .couleur{
+    padding: 15px;
+    margin: 1px auto;
+    font-size: larger;
+    text-transform: capitalize;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.red{
+    background-color: rgb(213, 42, 39);
+}
+.pink{
+    background-color: rgb(234, 30, 196);
+}
+.moov{
+    background-color: rgb(64, 230, 55);
+}
+.zeroCouleur{
+    background-color: whitesmoke;
+}
+.partie2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 25px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    margin-top: 25px;
+    border-radius: 17px;
+}
+.partie2 .lumiere{
+    margin: 4px 11px 0 0px;
+    text-align: end;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    position: relative;
+    left: 89%;
+    cursor: pointer;
+}
+.lumiere1{
+    background: white;
+}
+.lumiere2{
+    background: rgb(0, 0, 0);
+}
+.partie2 .memoires{
+    margin: 6px 6px 0 ;
+    background-color: rgb(72 72 72 / 81%);
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: start;
+    padding-top: 5px;
+    color: #ffffff;
+}
+.partie2 .memoire{
+    display: none;
+}
+.partie2 .memoires>.resultatPrecedent{
+    color: rgb(255, 255, 255);
+    padding-left:25px ;
+}
+.partie2 .ecran{
+    margin: 0 6px 6px;
+    background-color: rgb(72 72 72 / 81%);
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    text-align: end;
+    color: #ffffff;
+    border-radius: 0 0 3% 3%;
+
+}
+.partie2 .touches{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 52px);
+    margin: 12px 13px 5px;
+    grid-gap: 1%;
+    /* text-align: center; */
+    height: 240px;
+    justify-content: center;
+
+}
+
+.partie2 .touches >.touche{
+    margin: 1px 0;
+color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.partie2 .touches >.touche:hover{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.partie2 .touches >.egale{
+    background-color: #74ff2dd1;
+}
+.partie2 .touches >.supp{
+   background-color: rgb(104 43 43);
+   color: rgba(255, 0, 0, 0.459);
+}
+.partie2 .touches >.nombre{
+    background-color: rgb(67 145 191 / 67%);
+}
+.partie2 .touches >.operer{
+    background-color: #707578;;
+}
+
+blockquote{
+    text-align: center;
+    padding: 5px 0 10px 0;
+    margin: -10px 0 0 0;
+    text-transform: uppercase;
+    font-family: fangsong;
+    font-size: medium;
+    color: oldlace;
+}
